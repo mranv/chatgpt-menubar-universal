@@ -44,7 +44,6 @@ app.on("ready", () => {
   mb.on("ready", () => {
     const { window } = mb;
 
-
     if (process.platform !== "darwin") {
       window.setSkipTaskbar(true);
     } else {
@@ -79,13 +78,15 @@ app.on("ready", () => {
       {
         label: "View on GitHub",
         click: () => {
-          shell.openExternal("https://github.com/vincelwt/chatgpt-mac");
+          shell.openExternal(
+            "https://github.com/mranv/chatgpt-menubar-universal"
+          );
         },
       },
       {
-        label: "Author on Twitter",
+        label: "Portfolio",
         click: () => {
-          shell.openExternal("https://twitter.com/vincelwt");
+          shell.openExternal("https://mranv.github.io/git-profile");
         },
       },
     ];

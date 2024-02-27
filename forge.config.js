@@ -1,10 +1,11 @@
 const { parsed } = require("dotenv").config();
+
 module.exports = {
   packagerConfig: {
     name: "ChatGPT",
     executableName: "ChatGPT",
     icon: "images/icon",
-    appBundleId: "com.vincelwt.chatgptmac",
+    appBundleId: "com.mranv.chatgptmac",
     extendInfo: {
       LSUIElement: "true",
     },
@@ -14,8 +15,7 @@ module.exports = {
       identity: "Developer ID Application: Lyser.io Ltd (R4PF6TTR6Z)",
     },
     osxNotarize: {
-      appBundleId: "com.vincelwt.chatgptmac",
-
+      appBundleId: "com.mranv.chatgptmac",
       tool: "notarytool",
       appleId: parsed.APPLE_ID,
       appleIdPassword: parsed.APPLE_PASSWORD,
@@ -34,24 +34,25 @@ module.exports = {
       },
     },
   ],
-
   rebuildConfig: {},
   makers: [
     {
       name: "@electron-forge/maker-squirrel",
-      config: {},
+      config: {}, // Configuration for Windows builds (x64)
     },
     {
       name: "@electron-forge/maker-dmg",
-      platforms: ["darwin"],
+      platforms: ["darwin"], // Configuration for macOS builds (x64 and ARM64)
       config: {},
     },
     {
       name: "@electron-forge/maker-deb",
+      platforms: ["linux"], // Configuration for Linux builds (x64 and ARM64)
       config: {},
     },
     {
       name: "@electron-forge/maker-rpm",
+      platforms: ["linux"], // Configuration for Linux builds (x64 and ARM64)
       config: {},
     },
   ],
