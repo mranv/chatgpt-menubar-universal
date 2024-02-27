@@ -1,0 +1,1 @@
+# chatgpt-menubar-universal
