@@ -1,7 +1,7 @@
 {
-  "name": "chatgpt-mac",
-  "productName": "chatgpt-mac",
-  "version": "0.1.0",
+  "name": "chatgpt-universal",
+  "productName": "chatgpt-universal",
+  "version": "0.1.1",
   "description": "Menubar app for ChatGPT",
   "main": "index.js",
   "scripts": {
@@ -12,13 +12,20 @@
     "lint": "echo \"No linting configured\""
   },
   "keywords": [
-    "chatgpt",
-    "openai",
-    "mac"
+    "artificial intelligence",
+    "language model",
+    "natural language processing",
+    "text generation",
+    "conversational AI",
+    "machine learning",
+    "NLP",
+    "AI assistance",
+    "creative writing",
+    "knowledge base"
   ],
   "author": {
-    "name": "Vince Loewe",
-    "email": "vince@lyser.io"
+    "name": "Anubhav Gain",
+    "email": "iamanubhavgain@gmail.com"
   },
   "license": "MIT",
   "dependencies": {
