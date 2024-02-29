@@ -2,8 +2,8 @@ const { parsed } = require("dotenv").config();
 
 module.exports = {
   packagerConfig: {
-    name: "ChatGPT",
-    executableName: "ChatGPT",
+    name: "chatgpt-universal",
+    executableName: "chatgpt-universal",
     icon: "images/icon",
     appBundleId: "com.mranv.chatgptmac",
     extendInfo: {
