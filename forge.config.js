@@ -5,7 +5,7 @@ module.exports = {
     name: "chatgpt-universal",
     executableName: "chatgpt-universal",
     icon: "images/icon",
-    appBundleId: "com.mranv.chatgptmac",
+    appBundleId: "com.mranv.chatgptuniversal",
     extendInfo: {
       LSUIElement: "true",
     },
@@ -15,7 +15,7 @@ module.exports = {
       identity: "Developer ID Application: Lyser.io Ltd (R4PF6TTR6Z)",
     },
     osxNotarize: {
-      appBundleId: "com.mranv.chatgptmac",
+      appBundleId: "com.mranv.chatgptuniversal",
       tool: "notarytool",
       appleId: parsed.APPLE_ID,
       appleIdPassword: parsed.APPLE_PASSWORD,
